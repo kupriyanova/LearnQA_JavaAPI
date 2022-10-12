@@ -16,7 +16,7 @@ import java.util.Map;
 
 public class UserRegisterTest extends BaseTestCase {
 
-    private String email = "vinkotov@example.com";
+    private final String email = "vinkotov@example.com";
 
     @Description("Создание пользователя с некорректным email - без символа @")
     @Test
