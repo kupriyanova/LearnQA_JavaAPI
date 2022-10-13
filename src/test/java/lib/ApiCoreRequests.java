@@ -52,4 +52,13 @@ public class ApiCoreRequests extends BaseTestCase {
                 .put("https://playground.learnqa.ru/api/user/" + userId)
                 .andReturn();
     }
+    @Step("Удаляет пользователя")
+    public static Response deleteUserRequest(String header, String cookie, String userId) {
+        return  RestAssured
+                .given()
+                .header("x-csrf-token", header)
+                .cookie("auth_sid", cookie)
+                .delete("https://playground.learnqa.ru/api/user/" + userId)
+                .andReturn();
+    }
 }
