@@ -1,6 +1,8 @@
 package tests;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import lib.Assertions;
@@ -12,6 +14,8 @@ import java.util.Map;
 
 import static lib.ApiCoreRequests.*;
 
+@Epic("Delete user cases")
+@Feature("Delete user")
 public class UserDeleteTest extends BaseTestCase {
 
     @Description("Первый - на попытку удалить пользователя по ID 2.")

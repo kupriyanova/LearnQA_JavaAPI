@@ -1,6 +1,8 @@
 package tests;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import lib.Assertions;
@@ -13,6 +15,8 @@ import java.util.Map;
 
 import static lib.ApiCoreRequests.*;
 
+@Epic("Edit user cases")
+@Feature("Edit user")
 public class UserEditTest extends BaseTestCase {
 
     @Description("Попытаемся изменить данные пользователя, будучи неавторизованными")
